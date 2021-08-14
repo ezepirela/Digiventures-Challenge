@@ -14,7 +14,7 @@ export default function Login() {
   const submit = async () => {
     console.log(formState)
     try{
-      const response = await fetch('http://localhost:4000/test', {
+      const response = await fetch('http://localhost:3000/login', {
             method: 'POST',
             body: JSON.stringify({inputs: formState}),
             headers: {'Content-Type': 'application/json'}
